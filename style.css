@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+#lighterBg{
+    background-color: #1A4063;
+    height: 140px;
+    width: 100%;
+    box-shadow:   0.3em 0.3em 1em rgba(0, 0, 0, 0.5);
+}
+body{
+    background-color: #13293c;
+}
+
+#fullName{
+    display: inline-flex;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 95px;
+    left: 180px;
+}
+
+#lineThrough{
+    height: 5px;
+    width: 85%;
+    background-color: white;
+    position: relative;
+    top: 102px;
+}
+
+#circleNextToName{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    display: inline-flex;
+    left: 20px;
+    transition: height cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s, width cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+}
+
+#circleNextToName:hover{
+    transition: height cubic-bezier(0.075, 0.82, 0.165, 1) 750ms, width cubic-bezier(0.075, 0.82, 0.165, 1) 750ms;
+    height: 200px;
+    width: 200px;
+}
+
+#smallerCircleNextToLine{
+    background-color: white;
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 98%;
+    bottom: 23px;
+}
+
+.menuBar{
+    display: inline-flex;
+    float: right;
+    width: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10px;
+}
+
+#firstLine, #secondLine, #thirdLine{
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    position: relative;
+    right: 95px;
+    margin-top: 6px;
+}
+
