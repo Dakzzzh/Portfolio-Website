@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dakshdeep Singh Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dakshdeep Singh Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    </head>
 <body>
     <div class="container">
         <div id="lighterBg">
             <h1 id="fullName">Dakshdeep Singh</h1>
+            <h2 id="subtitleLine">2nd Semester CIS | <span id="KPUlink" onclick="openKPUwebsite()">KPU Surrey, BC </span> </h2>
             <div id="lineThrough">
                 <div id="smallerCircleNextToLine"></div>
             </div>
             <div id="circleNextToName"></div>
-            <div class="menuBar">
+            <div class="menuBar" onclick="openNav()">
                 <div id="firstLine"></div>
                 <div id="secondLine"></div>
                 <div id="thirdLine"></div>
             </div>
-            
+            <div id="mySideNav" class="sideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="#">Projects</a>
+                <a href="#">Socials</a>
+                <a href="#">Contact</a>
+            </div>
+            <h1 id="portfolioWebsiteHeading">This is my Portfolio Website</h1>
+            <div class="linksToPages">
+                <a href="aboutMe.html"><span id="aboutMeLink">ABOUT ME</span></a> | <span id="projectsLink">PROJECTS</span> | <span id="socialsLink">SOCIALS</span> | <span id="contactLink">CONTACT</span>
+            </div>
     </div>
+
+    
+        
+  
+   
 </body>
+<script src="app.js"></script>
 </html>

@@ -9,13 +9,13 @@
 }
 
 #lighterBg{
-    background-color: #1A4063;
+    background-color: #3b5fb0;
     height: 140px;
     width: 100%;
     box-shadow:   0.3em 0.3em 1em rgba(0, 0, 0, 0.5);
 }
 body{
-    background-color: #13293c;
+    background-color: #1f386f;
 }
 
 #fullName{
@@ -23,9 +23,33 @@ body{
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
-    top: 95px;
+    top: 60px;
     left: 180px;
 }
+
+#subtitleLine{
+    position: absolute;
+    color: white;
+    font-family: 'Robotic Mono', monospace;
+    left: 180px;
+    top: 100px;
+}
+
+
+#KPUlink{
+    transition: color;
+    color: white;
+    font-weight: bolder;
+    transition-duration: 1s;
+}
+
+#KPUlink:hover{
+    color: #840029;
+    font-weight: bolder;
+    transition-duration: 1s;
+}
+
+
 
 #lineThrough{
     height: 5px;
@@ -43,6 +67,8 @@ body{
     position: relative;
     display: inline-flex;
     left: 20px;
+    background-image: url(pumpkinPhoto.png);
+    background-size: contain;
     transition: height cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s, width cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
 }
 
@@ -67,6 +93,7 @@ body{
     display: inline-flex;
     float: right;
     width: 30px;
+    height: 15px;
     flex-wrap: wrap;
     position: relative;
     top: 10px;
@@ -79,5 +106,338 @@ body{
     position: relative;
     right: 95px;
     margin-top: 6px;
+}
+
+.sideNav{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s
+}
+
+.sideNav a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:hover{
+    color: #f1f1f1;
+}
+
+.sideNav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.aboutMeContainer{
+    color: white;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    padding-bottom:30px;
+}
+
+#mainLine{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 3px 4px 2px rgba(0,0,0,0.38);
+}
+
+#aboutMeContent{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+#portfolioWebsiteHeading{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', monospace;
+    position: relative;
+    padding-top: 180px;
+    font-size: 60px;
+}
+
+/*Link to Pages */
+.linksToPages{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Gruppo', sans-serif;
+    color: #B4CDED;
+}
+
+/*ABOUT ME LINK */
+
+#aboutMeLink{
+    position: relative;
+    color:#B4CDED;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#aboutMeLink:hover{
+    color:white;
+    font-size: 60px;
+    transition-duration: 1s
+}
+
+#aboutMeLink::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#aboutMeLink:hover::before{
+    transform: scaleX(1);
+}
+
+/*ABOUT ME LINK */
+
+
+/* PROJECTS LINK */
+
+#projectsLink{
+    position: relative;
+    color:#B4CDED;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#projectsLink:hover{
+    color:white;
+    font-size: 60px;
+    transition-duration: 1s
+}
+
+#projectsLink::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#projectsLink:hover::before{
+    transform: scaleX(1);
+}
+
+/* PROJECTS LINK */
+
+/*SOCIALS LINK */
+
+#socialsLink{
+    position: relative;
+    color:#B4CDED;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#socialsLink:hover{
+    color:white;
+    font-size: 60px;
+    transition-duration: 1s
+}
+
+#socialsLink::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+#socialsLink:hover::before{
+    transform: scaleX(1);
+}
+
+/*SOCIALS LINK */
+
+/*CONTACT LINK */
+
+#contactLink{
+    position: relative;
+    color:#B4CDED;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#contactLink:hover{
+    color:white;
+    font-size: 60px;
+    transition-duration: 1s
+}
+
+#contactLink::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+#contactLink:hover::before{
+    transform: scaleX(1);
+}
+
+/* CONTACT LINK */
+
+/*Link to Pages */
+
+#techStackList{
+    text-align: center;
+    text-shadow: 3px 4px 2px rgba(0,0,0,0.38);
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#myTechStackList{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    
+}
+
+#pythonLogo{
+    position: relative;
+    top: 17px;
+    left: -3px;
+    display: inline-flex;
+}
+
+#pythonLink{
+    color:white;
+    transition-duration: 2s;
+}
+
+#pythonLink:hover{
+    color: #306998;
+    transition-duration: 1s;
+}
+
+#htmlLogo{
+    position: relative;
+    top: 15px;
+    left: -5px;
+    display: inline-flex;
+    transition-duration: 1s;
+}
+
+#HTMLlink{
+    color: white;
+    transition-duration: 2s;
+}
+
+#HTMLlink:hover{
+    color: #e34c26;
+    transition-duration: 1s;
+}
+
+
+#cssLogo{
+    position: relative;
+    top: 15px;
+    left: -2px;
+    display: inline-flex;
+}
+
+#CSSlink{
+    color: white;
+    transition-duration: 2s;
+}
+
+#CSSlink:hover{
+    color: #264de4;
+    transition-duration: 1s;
+}
+
+#jsLogo{
+    position: relative;
+    top: 12px;
+    left: -2x;
+    display: inline-flex;
+    margin-right: 4px;
+}
+
+#JSlink{
+    color: white;
+    transition-duration: 2s;
+}
+
+#JSlink:hover{
+    color: #F0DB4F;
+    transition-duration: 1s;
+}
+
+#javaLogo{
+    position: relative;
+    top: 15px;
+    left: -4px;
+    display: inline-flex;
+    border-radius: 10px;
+}
+
+#javaLink{
+    color: white;
+    transition-duration: 2s;
+}
+
+#javaLink:hover{
+    color: rgb(254, 58, 58);
+    transition-duration: 1s;
+}
+
+@media (max-width: 1000px){
+    .techImage {
+        display: none;
+    }
 }
 

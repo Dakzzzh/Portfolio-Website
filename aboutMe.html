@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakshdeep Singh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="lighterBg">
+            <h1 id="fullName">Dakshdeep Singh</h1>
+            <h2 id="subtitleLine">2nd Semester CIS | <span id="KPUlink" onclick="openKPUwebsite()">KPU Surrey, BC </span> </h2>
+            <div id="lineThrough">
+                <div id="smallerCircleNextToLine"></div>
+            </div>
+            <div id="circleNextToName"></div>
+            <div class="menuBar" onclick="openNav()">
+                <div id="firstLine"></div>
+                <div id="secondLine"></div>
+                <div id="thirdLine"></div>
+            </div>
+            <div id="mySideNav" class="sideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="#">Projects</a>
+                <a href="#">Socials</a>
+                <a href="#">Contact</a>
+            </div>
+
+        <div class="aboutMeContainer">
+            <h1 id="mainLine">ABOUT ME</h1>
+            <p id="aboutMeContent">Hello! My name is Dakshdeep Singh. I am an aspiring software engineer and front-end developer. I currently study at Kwantlen Polytechnic University in Surrey, BC, Canada and it is going to be my second semester this spring. This is my first portfolio website and I am trying to make it as good as possible!</p>
+            <br>
+            <h1 id="techStackList">My Tech-Stack</h1>
+            
+            <ul id="myTechStackList">
+                <p><span><img src ="pythonLogo.png" height=50 width=50 id="pythonLogo"></span><span id="pythonLink" onclick="openPythonWebsite()">Python</span> - Data Structure & Algorithms.</p>
+                <br>
+                <p><img src="htmlLogo.png" height=50 width=50 id="htmlLogo"><span id="HTMLlink" onclick="openHTMLlink()">HTML</span>,<img src="cssLogo.png" height=50 width=50 id="cssLogo"><span id="CSSlink" onclick="openCSSlink()">CSS</span>,<img src="jsLogo.png" height=45 width=45 id="jsLogo"><span id="JSlink" onclick="openJSlink()">JS</span> - Front-end Development.</p>
+                <br>
+                <p><img src="javaLogo.svg" height=50 width=50 id="javaLogo"><span id="javaLink">Java</span> - Back-end Development.</p>
+                <br>
+                <br>
+            </ul>
+
+        </div>
+            
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
