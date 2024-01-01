@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dakshdeep Singh Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dakshdeep Singh Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    </head>
 <body>
     <div class="container">
         <div id="lighterBg">
-            <h1 id="fullName">Dakshdeep Singh</h1>
-            <h2 id="subtitleLine">Computer Information Systems | <span id="KPUlink" onclick="openKPUwebsite()">KPU Surrey, BC </span> </h2>
+            <div class="linksToPages hidden">
+                <a href="index.html"><span id="homeLink">HOME</span></a> | <a href="aboutMe.html"><span id="aboutMeLink">ABOUT ME</span></a> | <a href="projects.html"><span id="projectsLink">PROJECTS</span></a> | <a href="contact.html"><span id="contactLink">CONTACT</span></a>
+            </div>
             <div id="lineThrough">
                 <a href="index.html"><div id="smallerCircleNextToLine"></div></a>
             </div>
-            <div id="circleNextToName"></div>
             <div class="menuBar" onclick="openNav()">
                 <div id="firstLine"></div>
                 <div id="secondLine"></div>
@@ -32,13 +38,12 @@
                 <a href="index.html">Home</a>
                 <a href="aboutMe.html">About Me</a>
                 <a href="projects.html">Projects</a>
-                <a href="#">Socials</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </div>
 
-        <div class="aboutMeContainer hidden">
+        <div class="aboutMeContainer">
             <h1 id="aboutMeTitle">ABOUT ME</h1>
-            <p id="aboutMeContent">Hello! My name is Dakshdeep Singh. I am an aspiring software engineer and front-end developer. I currently study at Kwantlen Polytechnic University in Surrey, BC, Canada and it is going to be my second semester this spring. This is my first portfolio website and I am trying to make it as good as possible!</p>
+            <p id="aboutMeContent">Hello! My name is Dakshdeep Singh. I am an aspiring software engineer and front-end developer. I currently study at <a href="https://www.kpu.ca" target="_blank"><span id="KPUlink">Kwantlen Polytechnic University</span></a> in Surrey, BC, Canada and it is going to be my second semester this spring. This is my first portfolio website and I am trying to make it as good as possible!</p>
             <br>
             <h1 id="techStackTitle">My Tech-Stack</h1>
             

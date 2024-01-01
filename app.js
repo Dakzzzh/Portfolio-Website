@@ -26,6 +26,8 @@ function openJSlink(){
     window.open("https://www.javascript.com", "_blank");
 }
 
+/* REVEAL ON SCROLL ANIMATION */
+
 const observer = new IntersectionObserver((entries => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -39,3 +41,5 @@ const observer = new IntersectionObserver((entries => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+/* REVEAL ON SCROLL ANIMATION */

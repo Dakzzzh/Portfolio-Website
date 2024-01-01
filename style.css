@@ -8,90 +8,125 @@
     width: 100%;
 }
 
-#lighterBg{
+/* #lighterBg{
     background-color: #3b5fb0;
-    height: 140px;
+    height: 70px;
     width: 100%;
-    box-shadow:   0.3em 0.3em 1em rgba(0, 0, 0, 0.5);
-}
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.5);
+} */
+
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-image: url("spaceImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
 /* HOME PAGE */
 
 #fullName{
     display: inline-flex;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    top: 60px;
-    left: 180px;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 60px;
+    position: absolute;
+    top: 300px;
+    left: 237px;
+    animation: transitionIn 2s ease;
 }
 
-#subtitleLine{
+#nameContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateX(-10px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes transitionInForGit {
+    from{
+        opacity: 0;
+        transform: translateX(-10px)
+    }
+    to{
+        opacity: 0.5;
+        transform: translateX(0px)
+    }
+}
+
+#subtitleLineContainer{
+    width: 590.05px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    top: 380px;
     position: absolute;
     color: white;
+    font-size: 30px;
     font-family: 'Robotic Mono', monospace;
-    left: 180px;
-    top: 100px;
+    display: flex;
+    left: 240px;
+    animation: transitionIn 2s ease;
 }
 
+#githubLogo{
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    top: 135px;
+    transition-duration: 1s;
+    opacity: 0.5;
+    animation: transitionInforGit 2s ease;
+}
 
-#KPUlink{
-    transition: color;
-    color: white;
-    font-weight: bolder;
+#githubLogo:hover{
+    opacity: 1;
     transition-duration: 1s;
 }
 
-#KPUlink:hover{
-    color: #840029;
-    font-weight: bolder;
+#instagramLogo{
+    display: inline-flex;
+    position: absolute;
+    left: 50px;
+    top: 131px;
+    transition-duration: 1s;
+    opacity: 0.5;
+    animation: transitionInforGit 2s ease;
+}
+
+#instagramLogo:hover{
+    opacity: 1;
     transition-duration: 1s;
 }
 
-#lineThrough{
-    height: 5px;
-    width: 85%;
-    background-color: white;
-    position: relative;
-    top: 102px;
-}
 
 #circleNextToName{
-    height: 150px;
-    width: 150px;
+    height: 400px;
+    width: 400px;
     background-color: white;
     border-radius: 50%;
-    position: relative;
-    display: inline-flex;
-    left: 20px;
-    background-image: url(pumpkinPhoto.png);
     background-size: contain;
-    transition: height cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s, width cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s, box-shadow ease;
-    box-shadow: 0 0 0 0 #000000;
+    position: absolute;
+    left: 60%;
+    background-image: url(pumpkinPhoto.png);
+    top: 250px;
+    animation: transitionIn 2s;
 }
 
 #circleNextToName:hover{
-    transition: height cubic-bezier(0.075, 0.82, 0.165, 1) 750ms, width cubic-bezier(0.075, 0.82, 0.165, 1) 750ms, box-shadow ease;
-    box-shadow: 0px 10px 13px -7px #000000;
-    height: 200px;
-    width: 200px;
-}
-
-#smallerCircleNextToLine{
-    background-color: white;
-    display: inline-flex;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    position: relative;
-    left: 98%;
-    bottom: 23px;
-    background-image: url(homeButton.png);
-    background-size: contain;
+    height: 400px;
+    width: 400px;
 }
 
 .menuBar{
@@ -109,6 +144,7 @@ body{
     width: 30px;
     background-color: white;
     position: relative;
+    top: -47px;
     right: 95px;
     margin-top: 6px;
 }
@@ -151,27 +187,58 @@ body{
 #portfolioWebsiteHeading{
     text-align: center;
     color: white;
-    font-family: 'Montserrat', monospace;
+    font-family: 'Gruppo', monospace;
     position: relative;
-    padding-top: 180px;
+    display: block;
+    top: 400px;
     font-size: 60px;
 }
 
     /*Link to Pages */
 .linksToPages{
     text-align: center;
-    color: white;
-    padding-top: 50px;
-    font-size: 50px;
+    padding-top: 20px;
+    font-size: 30px;
     font-family: 'Gruppo', sans-serif;
-    color: #B4CDED;
+    color: #6b6c6e;
 }
 
+    /* HOME LINK */
+    #homeLink{
+        position: relative;
+        color:#6b6c6e;
+        transition-duration: 2s;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        border-radius: 20px;
+        display: inline-block; 
+    }
+
+    #homeLink:hover{
+        color: white;
+        transition-duration: 1s;
+    }
+
+    #homeLink::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    #homeLink:hover::before{
+        transform: scaleX(1);
+    }
         /*ABOUT ME LINK */
 
 #aboutMeLink{
     position: relative;
-    color:#B4CDED;
+    color:#6b6c6e;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     border-radius: 20px;
@@ -180,8 +247,7 @@ body{
 
 #aboutMeLink:hover{
     color:white;
-    font-size: 60px;
-    transition-duration: 1s
+    transition-duration: 1s;
 }
 
 #aboutMeLink::before{
@@ -208,7 +274,7 @@ body{
 
 #projectsLink{
     position: relative;
-    color:#B4CDED;
+    color:#6b6c6e;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     border-radius: 20px;
@@ -217,7 +283,6 @@ body{
 
 #projectsLink:hover{
     color:white;
-    font-size: 60px;
     transition-duration: 1s
 }
 
@@ -240,47 +305,12 @@ body{
 
         /* PROJECTS LINK */
 
-        /*SOCIALS LINK */
-
-#socialsLink{
-    position: relative;
-    color:#B4CDED;
-    transition-duration: 2s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    border-radius: 20px;
-    display: inline-block;
-}
-
-#socialsLink:hover{
-    color:white;
-    font-size: 60px;
-    transition-duration: 1s
-}
-
-#socialsLink::before{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    background-color: white;
-    transition: transform 0.3s ease;
-}
-
-#socialsLink:hover::before{
-    transform: scaleX(1);
-}
-
-        /*SOCIALS LINK */
 
         /*CONTACT LINK */
 
 #contactLink{
     position: relative;
-    color:#B4CDED;
+    color:#6b6c6e;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     border-radius: 20px;
@@ -289,7 +319,6 @@ body{
 
 #contactLink:hover{
     color:white;
-    font-size: 60px;
     transition-duration: 1s
 }
 
@@ -343,6 +372,8 @@ body{
     font-family: 'Roboto Mono', monospace;
     text-shadow: 3px 4px 2px rgba(0,0,0,0.38);
     font-size: 40px;
+    padding-top: 60px;
+    animation: transitionIn 2s ease;
 }
 
 #aboutMeContent{
@@ -351,6 +382,38 @@ body{
     font-size: 30px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
+    animation: transitionIn 2s ease;
+}
+
+#KPUlink{
+    position: relative;
+    color:#6b6c6e;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#KPUlink:hover{
+    color:white;
+    transition-duration: 1s
+}
+
+#KPUlink::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+#KPUlink:hover::before{
+    transform: scaleX(1);
 }
 
 #techStackTitle{
@@ -358,6 +421,7 @@ body{
     text-shadow: 3px 4px 2px rgba(0,0,0,0.38);
     font-size: 40px;
     font-family: 'Roboto Mono', monospace;
+    animation: transitionIn 2s ease;
 }
 
 #myTechStackList{
@@ -366,6 +430,7 @@ body{
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
     padding-bottom: 50px;
+    animation: transitionIn 2s ease;
 }
 
 #pythonLogo{
@@ -373,16 +438,19 @@ body{
     top: 17px;
     left: -3px;
     display: inline-flex;
+    animation: transitionIn 2s ease;
 }
 
 #pythonLink{
     color:white;
     transition-duration: 2s;
+    animation: transitionIn 2s ease;
 }
 
 #pythonLink:hover{
     color: #306998;
     transition-duration: 1s;
+    animation: transitionIn 2s ease;
 }
 
 #htmlLogo{
@@ -391,16 +459,19 @@ body{
     left: -5px;
     display: inline-flex;
     transition-duration: 1s;
+    animation: transitionIn 2s ease;
 }
 
 #HTMLlink{
     color: white;
     transition-duration: 2s;
+    animation: transitionIn 2s ease;
 }
 
 #HTMLlink:hover{
     color: #e34c26;
     transition-duration: 1s;
+    animation: transitionIn 2s ease;
 }
 
 
@@ -409,16 +480,19 @@ body{
     top: 15px;
     left: -2px;
     display: inline-flex;
+    animation: transitionIn 2s ease;
 }
 
 #CSSlink{
     color: white;
     transition-duration: 2s;
+    animation: transitionIn 2s ease;
 }
 
 #CSSlink:hover{
     color: #264de4;
     transition-duration: 1s;
+    animation: transitionIn 2s ease;
 }
 
 #jsLogo{
@@ -427,16 +501,19 @@ body{
     left: -2x;
     display: inline-flex;
     margin-right: 4px;
+    animation: transitionIn 2s ease;
 }
 
 #JSlink{
     color: white;
     transition-duration: 2s;
+    animation: transitionIn 2s ease;
 }
 
 #JSlink:hover{
     color: #F0DB4F;
     transition-duration: 1s;
+    animation: transitionIn 2s ease;
 }
 
 #javaLogo{
@@ -445,16 +522,19 @@ body{
     left: -4px;
     display: inline-flex;
     border-radius: 10px;
+    animation: transitionIn 2s ease;
 }
 
 #javaLink{
     color: white;
     transition-duration: 2s;
+    animation: transitionIn 2s ease;
 }
 
 #javaLink:hover{
     color: rgb(254, 58, 58);
     transition-duration: 1s;
+    animation: transitionIn 2s ease;
 }
 
 @media (max-width: 1000px){
@@ -478,8 +558,10 @@ body{
 #projectsTitle{
     color: white;
     font-family: 'Robotic Mono', monospace;
+    padding-top: 60px;
     font-size: 40px;
     margin-bottom: 20px;
+    animation: transitionIn 2s ease;
 }
 
 .projectThumbnails{
